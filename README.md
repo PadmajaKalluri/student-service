@@ -27,12 +27,10 @@ mvn spring-boot:run
 Runs on: http://localhost:8081
 
 📄 API Endpoints
-Method	Endpoint	Description
-POST	/students	Add student
-GET	/students	Get all students
-GET	/students/{id}	Get student by ID
-PUT	/students/{id}	Update student
-DELETE	/students/{id}	Delete student
+Method	  Endpoint	Description
+POST	  /add/v1	  Add student
+GET	    /get-all-students	Get all students
+GET	    get/{id}	Get student by ID
 
 📘 Sample Request
 
