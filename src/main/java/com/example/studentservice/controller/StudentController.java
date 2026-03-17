@@ -17,17 +17,17 @@ public class StudentController {
         this.service = service;
     }
 
-    @PostMapping("/add")
+    @PostMapping("/add/v1")
     public ResponseEntity<Student> addStudent(@RequestBody Student student){
         return ResponseEntity.ok(service.addStudent(student));
     }
 
-    @GetMapping("get/{id}")
+    @GetMapping("/get/{id}")
     public ResponseEntity<Student> getStudent(@PathVariable String id){
         return ResponseEntity.ok(service.getStudent(id));
     }
 
-    @GetMapping("getAllStudents")
+    @GetMapping("/get-all-students")
     public ResponseEntity<List<Student>> getStudents(){
         return ResponseEntity.ok(service.getStudents());
     }
